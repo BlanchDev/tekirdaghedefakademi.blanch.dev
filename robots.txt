@@ -1,0 +1,21 @@
+User-agent: *
+
+Allow: /
+
+Allow: /index
+
+Allow: /hakkimizda
+
+Allow: /kurslar
+
+Allow: /online-kayit-formu
+
+Allow: /blog
+
+Allow: /kurs/
+
+Allow: /iletisim
+
+Allow: /anasayfa
+
+Allow: /sitemap.xml

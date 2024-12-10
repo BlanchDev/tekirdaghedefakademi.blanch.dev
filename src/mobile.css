@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1450px) {
+
+  .headerContainer{
+    width: 1250px !important;
+  }
+
+}
+
+@media only screen and (max-width: 1250px) {
+
+  .mHide{
+    display:none !important;
+  }
+
+  .mShow{
+    display:flex !important;
+  }
+
+  .borderNone{
+    border: none !important;
+  }
+
+  .mW100{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .mW95{
+    width: 95% !important;
+    max-width: 95% !important;
+  }
+
+  .mH100{
+    height: auto !important;
+    max-height: auto !important;
+  }
+
+  .mWrap{
+    flex-wrap: wrap !important;
+  }
+
+  .pageW{
+    width: 95% !important;
+  }
+
+  body{
+    font-size: 18px !important;
+  }
+
+  #mMenu{
+    z-index: 999;
+    display: none;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  #openMenu:checked ~ #mMenu{
+    display: flex;
+  }
+
+  #mMenuBtn{
+
+  }
+
+  .mNavBtn{
+    font-size: 2rem;
+
+  }
+
+  .mDropContainer{
+    display: none;
+  }
+
+  .mDropBtn::after{
+    content: "▾";
+    padding-left: 5px;
+  }
+
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	font-family: "Poppins";
+}
+
+input[type=text], input[type=email], input[type=password] {
+	all: unset;
+}
+
+button, a {
+	all: unset;
+	cursor: pointer;
+}
+
+img{
+	user-select: none !important;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Montserrat';
+}
+
+p{
+	white-space: pre-line;
+}
+
+
+.w100{
+	width: 100%;
+}
+
+.pageW{
+	width: 1240px;
+}
+
+.mShow{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.row-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.column-reverse {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.aic {
+	align-items: center;
+}
+
+.aifs {
+	align-items: flex-start;
+}
+
+.aife {
+	align-items: flex-end;
+}
+
+.jcc {
+	justify-content: center;
+}
+
+.jcsb {
+	justify-content: space-between;
+}
+
+.jcsa {
+	justify-content: space-around;
+}

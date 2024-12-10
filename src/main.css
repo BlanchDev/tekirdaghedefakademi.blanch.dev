@@ -1,0 +1,337 @@
+@import url('/src/global.css');
+@import url('/src/mobile.css');
+
+/*Header*/
+header{
+	width: 100%;
+	height: 110px;
+	min-height: 110px;
+	max-height: 110px;	
+	border-bottom: 1px solid #DFE5EC;
+}
+
+.headerContainer{
+	width: 1450px;
+	height: 100%;
+}
+
+.navBar{
+	width: 860px;
+	min-width: 860px;
+	height: 100%;
+	flex-grow: 1;
+}
+.navLine{
+	height: 50%;
+}
+.navBtn, .dropBtn{
+	position: relative;
+	height: 100%;
+}
+.navBtn:hover, .dropBtn:hover{
+	position: relative;
+	top: -2px;
+	border-top: 3px solid #DA3214;
+	color: black;
+}
+.navBtn a{
+	width: 100%;
+	height: 100%;
+}
+.dropBtn::after{
+	content: "▾";
+	padding-left: 5px;
+}
+
+.dropContainer{
+	position: absolute;
+	z-index: 9;
+	display: none;
+	flex-direction: column;
+	top: 52px;
+	list-style: none;
+	background: #FFFFFF;
+	width: 250px;
+	border: 1px solid #DFE5EC;
+	border-top: 2px solid #DFE5EC;
+	border-radius: 5px;
+}
+.dropBtn:hover #kurslarMenu{
+	display: flex;
+}
+.dropContainer li{
+	transition: all 0.3s ease;
+	width: 100%;
+	height: 55px;
+	border-bottom: 2px solid #DFE5EC;
+}
+.dropContainer li:hover{
+	transition: all 0s ease;
+	background: orangered;
+	color: white;
+}
+.dropContainer li a{
+	width: 100%;
+	height: 100%;
+	flex-grow: 1;
+	padding-left: 20px;
+	gap: 5px;
+}
+
+.redBtn{
+	transition: all 0.3s ease;
+	background: linear-gradient(to right, #DA3214, #b5260d, #E33415, #b5260d);
+	color: white;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.redBtn:hover{
+	transition: all 0.3s ease;
+	background: linear-gradient(to right, #8a1c09, darkred, darkred, darkred);
+	color: white;
+	box-shadow: 0px 0px 10px #8a1c09;
+}
+/*Header End*/
+
+/*Cards*/
+.rainbowCard{
+	width: 195px;
+	height: 220px;
+	background: white;
+	border-radius: 5px;
+	text-align: center;
+	gap: 10px;
+}
+.rainbowCard h4{
+	color: #2d1d54;
+	font-size: 1.3rem;
+	font-weight: bolder;
+	font-family: 'Montserrat';
+}
+.rainbowCard p{
+	color: #637894;
+	font-size: 1rem;
+	letter-spacing: 0.2px;
+}
+.blueCard{
+	transition: all 0.3s ease;
+	border-top: 20px solid #1170F7;
+	border-bottom: 10px solid #1170F7;
+}
+.blueCard:hover{
+	transition: all 0.3s ease;
+	border-top: 30px solid #1170F7;
+	border-bottom: 30px solid #1170F7;
+}
+.greenCard{
+	transition: all 0.3s ease;
+	border-top: 20px solid #5FB364;
+	border-bottom: 10px solid #5FB364;
+}
+.greenCard:hover{
+	transition: all 0.3s ease;
+	border-top: 30px solid #5FB364;
+	border-bottom: 30px solid #5FB364;
+}
+.yellowCard{
+	transition: all 0.3s ease;
+	border-top: 20px solid #F6B71E;
+	border-bottom: 10px solid #F6B71E;
+}
+.yellowCard:hover{
+	transition: all 0.3s ease;
+	border-top: 30px solid #F6B71E;
+	border-bottom: 30px solid #F6B71E;
+}
+.orangeCard{
+	transition: all 0.3s ease;
+	border-top: 20px solid #F38100;
+	border-bottom: 10px solid #F38100;
+}
+.orangeCard:hover{
+	transition: all 0.3s ease;
+	border-top: 30px solid #F38100;
+	border-bottom: 30px solid #F38100;
+}
+.lightBlueCard{
+	transition: all 0.3s ease;
+	border-top: 20px solid #10A9EF;
+	border-bottom: 10px solid #10A9EF;
+}
+.lightBlueCard:hover{
+	transition: all 0.3s ease;
+	border-top: 30px solid #10A9EF;
+	border-bottom: 30px solid #10A9EF;
+}
+/*Cards End*/
+
+/*Summary*/
+.dotList li{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+}
+
+.blueDot{
+	background: #1170F7;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+.greenDot{
+	background: #5FB364;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+.orangeDot{
+	background: #F38100;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+.redDot{
+	background: #DE1B1F;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+.yellowDot{
+	background: #F6B71E;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+/*Summary End*/
+
+/*Online Kayıt*/
+.onlineKayit div label{
+	color: #6C83A2;
+	cursor: pointer;
+}
+.onlineKayit div input[type=text], 
+.onlineKayit div input[type=email]{
+	background: white;
+	color: #141412;
+	border: 3px solid #BDC3D2;
+	padding: 10px;
+	font-size: 1.1rem;
+}
+.onlineKayit div input[type=checkbox]{
+	background: white;
+	color: #141412;
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	border: 2px solid #BDC3D2;
+	cursor: pointer;
+}
+.onlineKayit div input[type=checkbox]:checked{
+	content: "✓";
+	background: yellowgreen;
+	border: 2px solid yellowgreen;
+}
+
+.greenBtn{
+	transition: all 0.3s ease;
+	background: linear-gradient(to right, #1ABC9C, #5FB364, #45C655, #1ABC9C);
+	color: white;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.greenBtn:hover{
+	transition: all 0.3s ease;
+	background: linear-gradient(to right, #159D86, darkgreen, darkgreen, darkgreen);
+	color: white;
+	box-shadow: 0px 0px 10px darkgreen;
+}
+/*Online Kayıt End*/
+
+/*Vaatler*/
+.bigRainbowCard{
+	width: 225px;
+	height: 325px;
+	background: white;
+	border-radius: 5px;
+	text-align: center;
+	gap: 10px;
+}
+.bigRainbowCard h4{
+	color: #2d1d54;
+	font-size: 1.3rem;
+	font-weight: bolder;
+	font-family: 'Montserrat';
+}
+.bigRainbowCard p{
+	color: #637894;
+	font-size: 0.9rem;
+	letter-spacing: 0.4px;
+	width: 90%;
+}
+/*Vaatler End*/
+
+/*öğrenci yorumları*/
+.studentComment{
+	width: 370px;
+	height: 410px;
+	background: white;
+	box-shadow: 0px 0px 10px gray;
+	border-radius: 10px;
+	padding: 50px;
+	text-align: center;
+	color: #6C83B9;
+}
+.studentComment p{
+	line-height: 30px;
+	letter-spacing: 0.5px;
+	font-weight: lighter;
+}
+/*öğrenci yorumları end*/
+
+/*footer*/
+footer{
+	width: 100%;
+	height: 100%;
+	background: #231834;
+	color: white;
+}
+/*footer end*/
+
+
+/*Side pages*/
+
+.titleSide{
+	padding-top: 50px;
+	height: 350px;
+	background: url('/resources/photos/kurumsal-bg.webp');
+	filter: brightness(0.9);
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.titlePageRule{
+	gap: 50px;
+	padding: 50px 0;
+}
+
+.titleH{
+	border-radius: 5px;
+	padding: 20px;
+	color: white;
+	gap: 10px;
+	background: rgba(175,25,25, 0.5);
+	width: 600px;
+	gap: 0px;
+	font-size: 2rem;
+}
+
+.sidePageP{
+	line-height: 29px;
+	letter-spacing: 0.5px;
+	color: #515f73;
+	white-space: pre-line;
+	font-size: 1rem;
+}
+
+/*Side pages end*/
